@@ -20,7 +20,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://blood-bank-app-client.vercel.app/login"],
     methods: ["POST","GET"],
     credentials: true
   }
