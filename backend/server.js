@@ -38,6 +38,10 @@ app.use("/api/v1/admin", require("./routes/adminRoutes"));
 //port
 const PORT = process.env.PORT || 8080;
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Blood Bank App API");
+});
+
 
 //listen
 app.listen(PORT, () => {
