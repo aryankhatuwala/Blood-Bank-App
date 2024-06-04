@@ -38,12 +38,6 @@ app.use("/api/v1/admin", require("./routes/adminRoutes"));
 //port
 const PORT = process.env.PORT || 8080;
 
-// for deployment
-// app.get("/", (req, res) => {
-// app.use(express.static(path.resolve(__dirname, "client", "build")));
-// res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-// });
-
 
 //listen
 app.listen(PORT, () => {
@@ -52,3 +46,5 @@ app.listen(PORT, () => {
       .bgBlue.white
   );
 });
+
+//"start": "react-scripts start",
